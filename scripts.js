@@ -8,4 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
         img.alt = `Random Image ${i + 1}`;
         gallery.appendChild(img);
     }
+     const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
 });
