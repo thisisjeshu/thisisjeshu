@@ -15,7 +15,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    color: #161b22;
+    color: #0d1117;
 }
 
 .logo a {
@@ -44,6 +44,7 @@ header {
 .nav-links a:hover {
     
     border-radius: 5px;
+    border-color:#21262d;
 }
 
 /* Menu Toggle for Mobile */
