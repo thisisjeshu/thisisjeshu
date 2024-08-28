@@ -7,7 +7,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
 
 /* Navbar Styles */
 header {
-    background-color: #0d1117;
+    background-color: #161b22;
 }
 
 .navbar {
@@ -15,7 +15,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    color: #0d1117;
+    color: #161b22;
 }
 
 .logo a {
@@ -27,11 +27,11 @@ header {
 .nav-links {
     list-style: none;
     display: flex;
-    background-color:#000000;
+    background-color:#161b22;
 }
 
 .nav-links li {
-    margin: 0 10px;
+    margin: 0 2px;
 }
 
 .nav-links a {
