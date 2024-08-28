@@ -7,7 +7,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
 
 /* Navbar Styles */
 header {
-    background-color: #161b22;
+    background-color: #0d1117;
 }
 
 .navbar {
@@ -38,6 +38,7 @@ header {
     text-decoration: none;
     color: #fff;
     font-size: 1em;
+    font:arial;
     padding: 5px 10px;
 }
 
