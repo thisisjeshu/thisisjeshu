@@ -27,6 +27,7 @@ header {
 .nav-links {
     list-style: none;
     display: flex;
+    background-color:#0d1117;
 }
 
 .nav-links li {
