@@ -85,5 +85,6 @@ header {
 
     .menu-toggle {
         display: flex;
+        color: #fff;
     }
 }
