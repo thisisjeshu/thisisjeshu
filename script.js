@@ -6,3 +6,10 @@ document.querySelectorAll('nav a').forEach(link => {
         document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
     });
 });
+// Add event listener to toggle navbar on mobile devices
+document.addEventListener("DOMContentLoaded", function() {
+  const navbarToggler = document.querySelector(".navbar-toggler");
+  navbarToggler.addEventListener("click", function() {
+    document.querySelector(".navbar-collapse").classList.toggle("show");
+  });
+});
