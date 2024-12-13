@@ -3,96 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shalowm Covenant Church</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio - Front-End Developer & Graphic Designer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #fff;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: #007bff;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 40px;
+            text-align: center;
+        }
+
+        .intro {
+            margin-bottom: 30px;
+        }
+
+        .intro h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: left;
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            margin: 50px 0;
+        }
+
+        .contact h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-links a {
+            color: #fff;
+            background-color: #007bff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #fff;
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+            margin-top: auto;
+        }
+
+        footer p {
+            color: #666;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Shalowm Covenant Church</h1>
-        <p>Bringing Peace, Love, and Faith to Your Life</p>
+        <h1>Jane Doe</h1>
+        <p>Front-End Developer & Graphic Designer</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
-    <main>
-        <section class="greeting">
-            <h2>Greetings in the name of the Lord!</h2>
-            <p>We are delighted to welcome you to Shalowm Covenant Church, a place where faith, fellowship, and community converge. Our church is dedicated to spreading the message of peace, love, and salvation through Jesus Christ.</p>
-            <img src="https://via.placeholder.com/600x300.png?text=Welcoming+Church" alt="Welcoming Church" class="responsive">
-        </section>
+    <section class="intro" id="about">
+        <h2>About Me</h2>
+        <p>Hi! I'm Jane, a passionate front-end developer and graphic designer. I specialize in creating user-friendly websites and stunning visual designs that bring brands to life. Let's build something amazing together!</p>
+    </section>
 
-        <section class="about-pastor">
-            <h2>About Pastor Shashi</h2>
-            <p>Pastor Shashi is a devoted servant of the Lord, leading our congregation with wisdom, compassion, and a deep understanding of God's Word. With years of experience in ministry, Pastor Shashi is committed to guiding individuals and families on their spiritual journeys.</p>
-            <img src="https://via.placeholder.com/600x300.png?text=Pastor+Shashi" alt="Pastor Shashi" class="responsive">
-        </section>
+    <section class="projects" id="projects">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300" alt="Project 1">
+                <h3>Portfolio Website</h3>
+                <p>A clean and modern portfolio to showcase my design and development skills.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300" alt="Project 2">
+                <h3>E-commerce Store</h3>
+                <p>A fully responsive e-commerce platform with interactive UI/UX designs.</p>
+            </div>
+        </div>
+    </section>
 
-        <section class="vision">
-            <h2>Our Vision</h2>
-            <blockquote>“The Kingdom of God…on earth as it is in heaven.”</blockquote>
-            <img src="https://via.placeholder.com/600x300.png?text=Vision+Statement" alt="Vision Statement" class="responsive">
-        </section>
-
-        <section class="mission">
-            <h2>Our Mission</h2>
-            <p>To introduce people to an authentic relationship with God through an encounter with Jesus the Messiah.</p>
-            <p>To experience community through relationships of honour.</p>
-            <p>To equip God’s people for their ministry through healing and training in the power of the Holy Spirit.</p>
-            <p>To engage God’s people in doing the works of Jesus in His Body and the community.</p>
-            <p>To impact the community through expanding the Kingdom of God.</p>
-            <img src="https://via.placeholder.com/600x300.png?text=Mission+Statement" alt="Mission Statement" class="responsive">
-        </section>
-
-        <section class="core-values">
-            <h2>Our Core Values</h2>
-            <p><strong>Supernatural Transformation:</strong> God desires divine health and healing of the whole person.</p>
-            <p><strong>God’s Word:</strong> We open ourselves to hear and obey His voice through prayer and study of the Bible.</p>
-            <p><strong>Relationship with God:</strong> Developing an intimate relationship with Him.</p>
-            <p><strong>People are Valuable:</strong> Every person is created in God’s image.</p>
-            <p><strong>Identity:</strong> We are given a new identity as Saints of the Most High.</p>
-            <p><strong>Excellence:</strong> God is worthy of our very best.</p>
-            <p><strong>Teamwork:</strong> Every believer is a minister, with gifts to be discovered and deployed.</p>
-            <p><strong>Growth:</strong> We are co-labourers with God in expanding His kingdom.</p>
-            <p><strong>No Condemnation Culture:</strong> God’s purpose is restoration and freedom, not condemnation.</p>
-            <img src="https://via.placeholder.com/600x300.png?text=Core+Values" alt="Core Values" class="responsive">
-        </section>
-
-        <section class="what-we-believe">
-            <h2>What We Believe</h2>
-            <p>We believe we are a significant part of what God is doing in India and all over the world. We honor and bless every congregation that names Yeshua (Jesus) the Messiah as Lord.</p>
-            <p>We worship One God revealed in Three persons.</p>
-            <p>Yeshua is Lord and Messiah.</p>
-            <p>Sin separates us from God.</p>
-            <p>Yeshua the Messiah is the only solution to sin.</p>
-            <p>The Holy Spirit gives us the power to live in victory over sin now and into eternity.</p>
-            <p>God calls us to deliver His message and do His works.</p>
-            <p>We believe the teachings of the Bible and strive to put them into practice in everyday life.</p>
-            <img src="https://via.placeholder.com/600x300.png?text=Beliefs" alt="Beliefs" class="responsive">
-        </section>
-
-        <section class="contact">
-            <h2>Contact Us</h2>
-            <p>Do you have questions, need prayer, or want to learn more about Shalowm Covenant Church? Please don't hesitate to reach out to us. We're here to support you on your spiritual journey.</p>
-            <address>
-                <strong>Location:</strong><br>
-                [Include your church's address here]
-            </address>
-            <p><button id="contactButton">Get in Touch</button></p>
-        </section>
-
-        <section class="services">
-            <h2>Our Services</h2>
-            <p>Join us for our uplifting and spiritually enriching services:</p>
-            <p><strong>Sunday Worship:</strong> Experience the power of worship, praise, and biblical teaching every Sunday at [Service Time]. All are welcome to join us.</p>
-            <p><strong>Bible Study:</strong> Dive deeper into God's Word during our weekly Bible study sessions.</p>
-            <p><strong>Youth Ministries:</strong> We offer exciting youth programs designed to nurture the spiritual growth of our young members.</p>
-            <img src="https://via.placeholder.com/600x300.png?text=Church+Service" alt="Church Service" class="responsive">
-        </section>
-    </main>
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Let's connect! Reach out to me via email or follow me on social media.</p>
+        <div class="social-links">
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://github.com" target="_blank">GitHub</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://dribbble.com" target="_blank">Dribbble</a>
+        </div>
+    </section>
 
     <footer>
-        <p>May God's peace and blessings be with you always.</p>
-        <p>In His service, Pastor Shashi and the Shalowm Covenant Church family</p>
+        <p>&copy; 2024 Jane Doe. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
